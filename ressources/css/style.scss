@@ -1,0 +1,1484 @@
+/*-------Fonts-------*/
+@font-face {
+  font-family: "Magic";
+  src: url(../fonts/Planewalker-38m6.ttf);
+}
+/*-------Général-------*/
+
+* {
+    box-sizing: border-box;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+body {
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.25;
+}
+
+.container {
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+  width: 100%;
+}
+ .facebook,  .carte {
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.8);
+ }
+
+ .corps {
+     flex: 0 0 100%;
+     max-width: 100%;
+ }
+
+ h2 {
+  font-family: 'Anton', sans-serif;
+  color: #05AE3B;
+  margin-top: 50px;
+  &:hover {
+    color: #059131;
+  }
+ }
+
+ h5 {
+   color: #05AE3B;
+   font-weight: bold;
+ }
+
+ .separation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+    border: solid 1px transparent;
+    border-radius: 50%;
+    background-color: transparent;
+
+  }
+  h3 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+}
+.article, .jeu {
+  .col-sm-1 {
+    padding-left: 40px;
+    padding-right: 0;
+  }
+}
+
+
+/*-------Header-------*/
+
+.fondHeader {
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  .fond1 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/pontStNaz.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond2 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeXwing.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond3 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeBloodbowl.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond4 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeStNazaire2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond5 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeWarmachine.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond6 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeStNazaire3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond7 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeInfinity.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond8 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeStNazaire1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond9 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/parallaxeKeyforge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond10 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeDarthVador.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond11 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeNecromunda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond12 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeStNazaire4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond13 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeGOT.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond14 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeYoda.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond15 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeStNazaire5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+  .fond16 {
+    width: 6.25%;
+    background-image: linear-gradient( rgba(255,255,255,0.2),  rgba(0,0,0,0.5), rgba(5,174,59,0.5)),
+                      url(../images/../images/parallaxeDragon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset -6px 0px 6px rgba(0,0,0,0.8);
+    &:hover {
+      box-shadow: inset -10px 0px 10px rgba(0,0,0,0.8);
+    }
+  }
+
+
+}
+
+
+
+
+.titreHeader {
+    width: 100%;
+    background-color: rgba(0,0,0,1);
+    color: rgb(5, 174, 59);
+    display: flex;
+    justify-content: center;
+    align-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+    // margin-bottom: 100px;
+    // border-bottom: solid #05AE3B 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px -2px 5px #05AE3B;
+    margin-bottom: 50px;
+    &:hover {
+      box-shadow: 0px -2px 10px #05AE3B;
+    }
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-content: flex-end;
+        align-items: flex-end;
+        text-align: center;
+        height: 100%;
+        font-family:'Anton', sans-serif;
+        &:hover {
+          text-shadow: 0px 2px 2px rgba(51, 51, 51, 0.8);
+        }
+    }
+}
+
+
+
+  
+
+  
+
+/*-------Corps de la page principale-------*/
+
+.sociauxMobile {
+  display: none;
+}
+.sociauxArticles {
+  display: flex;
+  justify-content: flex-start;
+  margin: auto;
+  h2 {
+    text-align: center;
+  }
+}
+
+.articles {
+ margin: 0 auto;
+}
+
+
+.facebook {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+  height: 500px;
+  border: solid black 2px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-image: url(../images/fondFacebook.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.youtube{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  iframe {
+    margin: 50px;
+  }
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.separation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  h3 {
+    -webkit-text-stroke: 1px black;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  
+}
+
+
+
+    .barreSeparation{
+        position: relative;
+        width: 30px;
+        height: 100%;
+        background-image:  linear-gradient( #05AE3B, rgba(0,0,0,1), rgba(255,255,255,0.8));
+
+         &::after {
+            bottom: 100%;
+            left: 50%;
+            border: solid transparent;
+            content:"";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-width: 15px;
+            margin-left: -15px;
+            border-color: rgba(5, 174, 59, 0);
+            border-bottom-color: #05AE3B;
+
+         }
+        
+
+
+    }
+
+.contenant {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+
+.carte {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  height: 600px;
+  width: 400px;
+  min-width: 300px;
+  border-radius: 20px;
+  border: 10px black solid;
+  background-image: url(../images/paper.jpg);
+  background-position: center;
+  background-size: cover;
+  &:hover {
+    box-shadow: 0px 6px 6px rgba(0,0,0,0.8);
+   }
+}
+
+.barreArticle {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 15px;
+  margin-left: 30px;
+  border-left: 2px black solid;
+  border-right: 2px black solid;
+  background-color: #05AE3B;
+  .medaillon {
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      border: 2px black solid;
+      background-color: #05AE3B;
+      margin-top: 40px;
+  }
+}
+
+.article {
+  text-align: center;
+  margin: 30px 20px 30px 20px;
+
+}
+
+/*-------Barre de Navigation-------*/
+
+.barreNavigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border: solid black 2px;
+    height: 350px;
+    width: 70px;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    right: 0%; 
+    top: 40%;
+    background: #FFF;
+    list-style: none;
+    text-align: center;
+    ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      text-align: center;
+      letter-spacing: 0.005px;
+      position: inline-block;
+      z-index: 1000;
+      max-width: 0;
+      overflow: hidden;
+      // -moz-transition: 0.8s all 0.3s;
+      // -webkit-transition: 0.8s all 0.3s;
+      // transition: 0.8s all 0.3s;
+    }
+    li {
+      position: relative;
+      z-index: 1000;
+      border-radius: 0 8px 8px 0;
+      color: #05AE3B;
+      &:hover ul {
+        max-width: 30em;
+        overflow: visible;
+      }
+    }
+    ul li {
+      
+      box-shadow: inset 0 0 1px lightgreen;
+      right: 285%;     
+      border-radius: 50px 0 0 50px;
+      background:  rgb(245, 245, 245);
+      z-index: 800;
+      height: 60px;
+      width: 225px;
+      padding-top: 10px;
+      &:hover {
+        overflow: visible;
+      }
+    }
+    
+  
+
+    a {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        text-decoration: none;
+        color: black;
+        font-size: 150%;
+        justify-content: center;
+    }
+
+    img {
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        ;
+        background: rgb(245, 245, 245);
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        transition: all 0.5s;
+        z-index: 1000;
+    }
+
+}
+// .afterNav {
+//   bottom: 100%;
+//   left: 0%;
+//   border: solid transparent;
+//   content:"";
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   pointer-events: none;
+//   border-width: 35px;
+//   margin-left: -35px;
+//   border-color: rgba(5, 174, 59, 0);
+//   border-bottom-color: #085353;
+//   cursor: pointer;
+// }
+
+// .beforeNav {
+//   cursor: pointer;
+//   bottom: -11%;
+//   left: -1%;
+//   border: solid transparent;
+//   content:"";
+//   height: 0;
+//   width: 0;
+//   position: absolute;
+//   pointer-events: none;
+//   border-left-width: 35px;
+//   border-right-width: 35px;
+//   border-color: rgba(5, 174, 59, 0);
+//   border-top: 35px solid #54c2c2;
+// }
+
+.deroule {
+  text-align: start;
+  padding-left: 20px;
+  position: absolute;
+  margin-top: -60px;
+  z-index: -1;
+}
+
+
+/*-------Planning-------*/
+
+.planning {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  padding-top: 50px;
+  background-image: url(../images/fondPlanning.jpg);
+  box-shadow: inset 0px 4px 4px rgb(180, 180, 180);
+    &:hover {
+      box-shadow: inset 0px 2px 2px rgb(180, 180, 180);
+    }
+
+  h2 {
+    text-align: center;
+  }
+
+  .separation {
+    color: #FFF;
+    -webkit-text-stroke: 2px #FFF;
+    img {
+      border: none;
+
+      background-color: transparent;
+
+    }
+  }
+}
+  
+  table {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    table-layout: fixed;
+    margin-top: 50px; 
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+  
+  table caption {
+    font-size: 1.5em;
+    margin: .5em 0 .75em;
+  }
+  
+  table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+  }
+  
+  table th,
+  table td {
+    padding: .625em;
+    text-align: center;
+  }
+  
+  table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+
+  /*-------Sponsors-------*/
+
+  .sponsors {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    max-width: 100%;
+    box-shadow: inset 0px 4px 4px rgb(180, 180, 180);
+    &:hover {
+      box-shadow: inset 0px 2px 2px rgb(180, 180, 180);
+    }
+
+    h2 {
+      text-align: center;
+    }
+  }
+
+  .ligneSponsors {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .liensSponsors {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.partenaire {
+    display: flex;
+    justify-content: center;
+    // margin: auto;
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid black;
+    cursor: pointer;
+    width: 185px;
+    height: 185px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.24);
+    h3 {
+        color: white;
+        font-weight: 800;
+        display: none;
+        width: 100px;
+        text-align: center;
+    }
+    &:hover h3 {
+        display: block;
+    }
+    
+}
+
+.multilud {
+    background-image: url(../images/multilud.jpg);
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      box-shadow: 0 12px 12px rgba(0,0,0,0.12), 0 12px 12px rgba(0,0,0,0.24);
+    }
+}
+
+.PCService {
+    background-image: url(../images/pcs442.jpeg);
+    background-size: cover;
+    background-position: center;
+    &:hover {
+      box-shadow: 0 12px 12px rgba(0,0,0,0.12), 0 12px 12px rgba(0,0,0,0.24);
+    }
+
+}
+  
+    
+
+    // h3 {
+    //   position: absolute;
+    //   text-align: center;
+    //   margin: 0 auto;
+    //   left: 40%;
+    //   top: 40%;
+    //   color: white;
+    //   font-size: 200%;
+    //   font-weight: 800;
+    //   width: 185px;
+
+    // }
+  
+
+  /*-------Footer-------*/
+
+  footer {
+    background:  rgb(245, 245, 245);
+    padding: 50px;
+    box-shadow: inset 0px 4px 4px rgb(180, 180, 180);
+    &:hover {
+      box-shadow: inset 0px 2px 2px rgb(180, 180, 180);
+    }
+  }
+  .separationHaute {
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: solid 10px black;
+    width: 80%;
+
+  }
+
+  .compagnieFooter {
+    text-align: center;
+    font-size: 150%;
+    font-family: 'Anton', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-right: solid 5px black;
+  }
+
+  .compagnie1 {
+    border-bottom: solid 4px #05AE3B;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-right: 30px;
+  }
+
+  .compagnie2 {
+    margin-right: 30px;
+  }
+
+  .sociauxFooter {
+    display: flex;
+    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 75px;
+    transition: 0.5s ease;
+    // &:hover img {
+    //   filter:blur(1px);
+    //   opacity:.9;
+    //   transform: scale(.95);
+    //   box-shadow:none;
+    // }
+    
+
+    a {
+      cursor: pointer;
+      margin: 10px;
+      transition: 1s ease;
+      &:hover img:hover {
+        transform:scale(1.05);
+        // filter:blur(0px);
+        opacity:1;
+        box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 5px 5px rgba(0,0,0,0.24);
+        background-image: url(../images/hypnoseGif.gif);
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    img {
+      height: 75px;
+      width: 75px;
+      border-radius: 50%;
+    }
+  }
+
+  .legalesFooter {
+    text-align: center;
+    font-size: 130%;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    border-left: solid 5px black;
+    cursor: pointer;
+  }
+
+  .legalesFooter a:hover {
+    color: #05AE3B;
+  }
+
+  .mentionsLegales {
+    border-bottom: solid 4px #05AE3B;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 30px;
+  }
+
+  .EmmanuelMahe {
+    margin-left: 30px;
+  }
+
+  /*-------Association corps-------*/
+
+
+
+  .fondAssociation {
+
+
+    .titreHeader {
+      // margin-bottom: 0%;
+      position: relative;
+    }
+
+    .separationHaute {
+      margin-top: 0%;
+    }
+
+    .container {
+      max-width: 100%;
+    }
+
+  }
+
+  .presentation {
+    position: relative;
+    margin: 0;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    padding: 200px;
+    padding-top: 0px;
+    padding-bottom: 100px;
+
+    h2 {
+      text-align: center;
+      color: #05AE3B;
+    }
+
+    h3 {
+      font-size: 200%;
+      text-align: center;
+
+    }
+  
+    p {
+      text-align: center;
+      font-size: 120%;
+
+      img {
+        float: right;
+        width: 660px;
+        height: auto;
+        margin: 20px;
+        border: 1px solid gray;
+        &:hover {
+          border: 1px solid black;
+        }
+      }
+    }
+
+
+
+    .hautTexte {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .association {
+      border: none;
+      width: auto;
+      margin: 0;
+      float: none;
+      border-radius: 0%;
+    }
+  }
+
+  .separationPont {
+    height: 500px;
+    width: 100vw;
+    background-image: url(../images/fondPont.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  /*-------Association Bureau-------*/
+
+  .bureau {
+    padding: 50px;
+    box-shadow: inset 0px 4px 4px rgb(180, 180, 180);
+    &:hover {
+      box-shadow: inset 0px 2px 2px rgb(180, 180, 180);
+    }
+    h2, h3 {
+      display: block;
+      text-align: center;
+    }
+    h4 {
+      font-family: 'Anton', sans-serif;
+      color: #05AE3B;
+    }
+  }
+  .membres {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-right: 50px;
+    margin-left: 50px;
+    img {
+      margin: 0 auto;
+      width: 300px;
+      height: 200px;
+      border: solid 10px black;
+      border-radius: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      
+    }
+  }
+
+  .membre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 350px;
+  height: 500px;
+  border: solid 10px black;
+  border-radius: 20px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.8);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-image: url(../images/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      box-shadow: 0px 6px 6px rgba(0,0,0,0.8);
+    }
+  }
+
+
+  /*-------Jeux-------*/
+
+
+  .corpsJeux {
+    .separation img{
+      border-radius: 0%;
+    }
+
+    h2 {
+      text-align: center;
+
+    }
+
+  }
+
+  .illustrations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .illustration {
+  width: 30vw;
+  height: 600px;
+  border: solid 10px black;
+  border-radius: 20px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.8);
+  background-image: url(../images/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  display: flex;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      box-shadow: 0px 6px 6px rgba(0,0,0,0.8);
+    }
+    img {
+      margin: auto;
+    }
+  }
+
+
+  .jeu {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #FFF;
+
+  }
+
+
+
+  .descriptionJeu {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    flex-wrap: nowrap;
+    max-width: 100%;
+  }
+
+  .parallaxe {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .parallaxeXwing {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+      background-image: url(../images/parallaxeXwing.jpg);
+    
+  }
+
+  .parallaxeBloodbowl {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+      background-image: url(../images/parallaxeBloodbowl.jpg);
+    
+  }
+
+  .parallaxeKeyforge {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+
+      background-image: url(../images/parallaxeKeyforge.jpg);
+    
+  }
+
+  .xwing {
+    h2 {
+      color: red;
+      position: relative;
+    }
+    .barreArticle, .medaillon {
+      background-color: red;
+    }
+  }
+
+  .bloodbowl {
+    h2 {
+      color: blue;
+      position: relative;
+    }
+    .barreArticle, .medaillon {
+      background-color:blue;
+    }
+  }
+
+  .keyforge {
+
+    h2 {
+      color: goldenrod;
+      position: relative;
+    }
+    .barreArticle, .medaillon {
+      background-color:goldenrod;
+    }
+  }
+
+.pontJeux {
+  margin-bottom: 100px;
+}
+
+/*-------Contact-------*/
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  max-width: 70%;
+  h2 {
+    margin-top: 10px;
+    font-size: 120%;
+  }
+}
+
+.titreFAQ {
+  margin-bottom: 50px;
+  img {
+    border-radius: 0%;
+  }
+}
+
+.question {
+  border-radius: 10px;
+  border: 10px solid black;
+  width: 90%;
+  height: auto;
+  background: rgb(245, 245, 245);
+  box-shadow: 0px 2px 2px rgba(0,0,0,0.8);
+  &:hover {
+    box-shadow: 0px 5px 5px rgba(0,0,0,0.8);
+  }
+  p {
+    margin: 10px;
+  }
+}
+
+
+.espaceBarre {
+  img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.formulaireContact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  flex-wrap: nowrap;
+  width: 30vw;
+  min-width: 350px;
+  height: 800px;
+  border: solid 10px black;
+  border-radius: 20px;
+  box-shadow: 0px 3px 3px rgba(0,0,0,0.8);
+  margin: 50px 50px 100px 50px;
+  background-image: url(../images/paper.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    &:hover {
+      box-shadow: 0px 6px 6px rgba(0,0,0,0.8);
+    }
+}
+
+.titreContact {
+  justify-self: flex-start;
+  align-self: flex-start;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  padding-left: 5px;
+  background:rgb(245, 245, 245);
+
+}
+.communautéDesJeux {
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  border: solid 10px black;
+  border-radius: 20px;
+
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 100%;
+    border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  padding-left: 5px;
+  font-weight: bolder;
+  background: rgb(245, 245, 245);
+  &:hover {
+    background: rgb(238, 238, 200);
+  }
+  
+  }
+}
+
+textarea {
+  text-align: left;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  background: rgb(245, 245, 245);
+  &:hover {
+    background:rgb(238, 238, 200);
+  }
+   
+}
+
+#envoyer {
+  justify-content: center;
+  align-self: center;;
+  margin: 20px;
+  width: 40%;
+  height: 40px;
+  color: white;
+  border: 5px ridge silver;
+  background: black;
+  border-radius: 1px;
+  &:hover {
+    box-shadow: inset 0px 0px 5px black;
+    color: black;
+    background:  rgb(245, 245, 245);;
+  }
+}
+
+
+/*-------Responsive-------*/
+
+
+@media screen and (max-width: 1280px) {
+
+  // Corps de la page
+  .sociauxArticles {
+    justify-content: center;
+  }
+  .sociaux {
+    display: none;
+  }
+
+  .sociauxMobile {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .facebookMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 150px;
+    margin: 20px;
+    background-image: linear-gradient(rgba(255,255,255,0.5)), url(../images/devantureAsso.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.8);
+  &:hover {
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.8);
+  }
+  a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    text-decoration: none;
+    cursor: pointer;
+    &:hover h5 {
+      color:#3A579D;
+    }
+    &:hover img {
+      filter: hue-rotate(15deg);
+    }
+  }
+
+  img {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+  }
+  h5 {
+    margin: auto;
+    font-family: 'Anton', sans-serif;
+    color: black;
+    font-size: 190%;
+  }
+ }
+
+
+  .youtubeMobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    height: 150px;
+    margin: 20px;
+    background-image: linear-gradient(rgba(255,255,255,0.5)), url(../images/devantureAsso.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 0px 0px 2px rgba(0,0,0,0.8);
+  &:hover {
+    box-shadow: inset 0px 0px 5px rgba(0,0,0,0.8);
+  }
+    a {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover h5 {
+        color: #aa0202;
+      }
+      &:hover img {
+        filter: hue-rotate(20deg);
+      }
+    }
+
+    img {
+      width: 75px;
+      height: 75px;
+      margin: 5px;
+    }
+    h5 {
+      margin: auto;
+      font-family: 'Anton', sans-serif;
+      color: black;
+      font-size: 190%;
+    }
+
+  }
+
+  // Barre de séparation
+
+  .barreSeparation {
+    display: none;
+  }
+
+  // Partenaires
+  .partenaire {
+    width: 150px; 
+    height: 150px;
+  }
+  .sponsors {
+    h3 {
+      display: block;
+    }
+  }
+
+
+  // Footer
+
+  .sociauxFooter {
+    display: flex;
+    // flex-direction: column;
+    margin: auto;
+  }
+  .compagnieFooter, .legalesFooter {
+    border: 0px transparent;
+  }
+  .compagnie1, .compagnie2 {
+    margin-right: 0;
+  }
+  .mentionsLegales, .EmmanuelMahe {
+    margin-left: 0;
+  }
+
+
+  //Association 
+
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: justify;
+      min-width: 350px;
+      display: flex;
+      align-items: center;
+      img {
+        float: none;
+        max-width: 100%;
+      }
+    }
+    
+  }
+
+  //Bureau
+
+  .membres {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 auto;
+    width: 100%;
+  }
+  .membre {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 30px;
+    img {
+      max-width: 90%;
+      height: auto;
+    }
+  }
+
+  //Jeux
+
+  .jeu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .carte {
+    width: 280px;
+  }
+
+  .illustration {
+    min-width: 300px;
+  }
+
+  .illustrations {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+}
